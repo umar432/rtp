@@ -9,7 +9,7 @@
 		<meta name="keywords" content="page loading, svg animation, loading effect, fullscreen svg" />
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<script src="js/snap.svg-min.js"></script>
@@ -18,59 +18,79 @@
 		<![endif]-->
 	</head>
 	<body>
+		<header style="border-bottom:1px solid #fff;box-shadow: 0 0 5px #888;" >
+		<div id="header" class="center">
+
+			<div class="hdr-lft">
+			<span class="logo"><a href="#home"><img src="img/logo_klm_cargo_400.png" height="60"/></a></span><!-- ./ Logo Area -->
+			</div>
+			<div class="hdr-rht">
+			<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+				</button><!-- ./ Hamburger Icon -->     
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+				</ul>
+			</div><!--./ Menu & Nav Bar -->
+			</div>
+			</nav>
+			</div>
+			<div class="clear"></div>
+		</div>
+		</header>
 		<div id="pagewrap" class="pagewrap">
-			<div class="container show" id="page-1">
+			  <div class="center container_o show" id="page-1">
 				<!-- Top Navigation -->
-				<div class="codrops-top clearfix">
-					<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Tutorials/CircularProgressButton/"><span>Previous Demo</span></a>
-					<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=18880"><span>Back to the Codrops Article</span></a></span>
-				</div>
-				<header class="codrops-header">
-					<h1>Page Loading Effects <span>Modern ways of revealing new content</span></h1>
-				</header>
-				<section class="columns clearfix">
-					<div class="column">
-						<nav class="codrops-demos">
-							<a href="index.html">Lazy Stretch</a>
-							<a href="index2.html">Circle</a>
-							<a href="index3.html">Spill</a>
-							<a href="index4.html">Frame it</a>
-							<a href="index5.html">Tunnel vision</a>
-							<a class="current-demo" href="index6.html">Windscreen wiper</a>
-							<a href="index7.html">Jammed blind</a>
-							<a href="index8.html">Parallelogram</a>
-							<a href="index9.html">Tilted</a>
-							<a href="index10.html">Lateral Swipe</a>
-							<a href="index11.html">Wave</a>
-							<a href="index12.html">Origami</a>
-							<a href="index13.html">Curtain</a>
-						</nav>
-					</div>
-					<div class="column">
+				<section class="">
+					<div class="panel">
+					 <table class="table">
+						<thead>
+						  <tr>
+							<th>Firstname</th>
+							<th>Lastname</th>
+							<th>Email</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr class="success">
+							<td>John</td>
+							<td>Doe</td>
+							<td>john@example.com</td>
+						  </tr>
+						  <tr class="danger">
+							<td>Mary</td>
+							<td>Moe</td>
+							<td>mary@example.com</td>
+						  </tr>
+						  <tr class="info">
+							<td>July</td>
+							<td>Dooley</td>
+							<td>july@example.com</td>
+						  </tr>
+						</tbody>
+					  </table>
+					  </div>
+					<div class="">
 						<p>To start the page loading animation, click the following link:</p>
 						<p><a class="pageload-link" href="#page-2">Show Page Loader</a></p>
 					</div>
 				</section>
-				<section class="related">
-					<p>If you enjoyed this demo you might also like:</p>
-					<a href="http://tympanus.net/Development/FullscreenOverlayStyles/">
-						<img src="http://tympanus.net/codrops/wp-content/uploads/2014/02/FullscreenOverlayStyles-300x162.jpg" />
-						<h3>Fullscreen Overlay Effects</h3>
-					</a>
-					<a href="http://tympanus.net/Tutorials/ShapeHoverEffectSVG/">
-						<img src="http://tympanus.net/codrops/wp-content/uploads/2014/01/ShapeHoverEffect-300x162.png" />
-						<h3>Shape Hover Effect</h3>
-					</a>
-				</section>
-			</div><!-- /container -->
+				
+			  </div><!-- /container -->
 
 			<!-- The new page dummy; this would be dynamically loaded content -->
-			<div class="container" id="page-2">
+			<div class="container_o" id="page-2">
 				<!-- Top Navigation -->
-				<div class="codrops-top clearfix">
-					<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Tutorials/CircularProgressButton/"><span>Previous Demo</span></a>
-					<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=18880"><span>Back to the Codrops Article</span></a></span>
-				</div>
+			
 				<section>
 					<h2>This is an example for a new page.</h2>
 					<p><a class="pageload-link" href="#page-1">Go back</a></p>
@@ -84,12 +104,14 @@
 			</div><!-- /pageload-overlay -->
 			
 		</div><!-- /pagewrap -->
+		 <script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 		<script src="js/classie.js"></script>
 		<script src="js/svgLoader.js"></script>
 		<script>
 			(function() {
 				var pageWrap = document.getElementById( 'pagewrap' ),
-					pages = [].slice.call( pageWrap.querySelectorAll( 'div.container' ) ),
+					pages = [].slice.call( pageWrap.querySelectorAll( 'div.container_o' ) ),
 					currentPage = 0,
 					triggerLoading = [].slice.call( pageWrap.querySelectorAll( 'a.pageload-link' ) ),
 					loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 400, easingIn : mina.easeinout } );

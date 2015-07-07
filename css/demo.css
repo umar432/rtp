@@ -27,8 +27,9 @@ body {
 	font-family: 'Lato', Arial, sans-serif;
 }
 
-.container {
+.container_o {
 	min-height: 100%;
+	padding-top:80px;
 }
 
 a {
@@ -42,6 +43,20 @@ a {
 a:hover, a:focus {
 	color: rgba(0,0,0,0.6);
 }
+
+.center{ margin: 0 auto; position: relative; max-width: 1400px; padding-left: 24px; padding-right: 24px;}
+.clear{clear:both;}
+header{   width:100%;  clear:both; position:fixed; top:0; z-index:1;  }
+.hdr-lft{ float:left; width:50%; padding-top:10px; padding-bottom:10px; }
+.hdr-rht{ float:right; width:50%;  padding-top:25px; padding-bottom:10px; text-align:right;}
+.logo{ font-size:20px; text-transform: uppercase; font-weight:100; color:#FFF; }
+
+.navbar-inverse{background:none; border:none; color:#fff}
+.navbar-inverse .navbar-nav>li>a{color:#fff;}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus{ background:none;}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus { background:none;}
+.navbar-inverse .navbar-toggle { border:none;}
+.navbar {margin-bottom:0px;}
 
 .codrops-header {
 	margin: 0 auto;
@@ -229,5 +244,31 @@ section p {
 	.codrops-icon span {
 		display: none;
 	}
+
+}
+
+@media (min-width: 1024px)
+ {
+.sec{background-color:#FFF;  width:100%;}
+
+ }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) 
+{
+
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) 
+{
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{ background:rgba(0, 0, 0, 0.2) none repeat scroll 0% 0%; box-shadow: 0 0 5px #29AFE2; border:0px;} 
+
+/* Landscape phones and down */
+@media (max-width: 480px) 
+{
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{ background:rgba(0, 0, 0, 0.2) none repeat scroll 0% 0%; box-shadow: 0 0 5px #29AFE2; border:0px;} 
 
 }
