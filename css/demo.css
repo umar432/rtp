@@ -67,6 +67,14 @@ footer{   width:100%;  clear:both; position:fixed; bottom:0; z-index:1; backgrou
 .container-fluid{margin-right:0px;}
 .navbar-collapse{padding-right:0px;}
 
+.leftnavg{ border-right:1px solid #ccc; position:absolute; height:100%; background:#4fc3f7; width:50%; top:50px; display:none; z-index:10; padding-left:10px; padding-right:10px; padding-top:10px; color:#fff; cursor:pointer}
+.photo{text-align:center; padding-top:10px;}
+.photo img{ border-radius:50%;  	}
+.photo h4{border-bottom:1px solid #fff; padding-bottom:10px;}
+.photo div{ border-bottom:1px solid #fff;padding-bottom:10px; text-align:left; margin-bottom:20px; }
+.menu{text-align:right; border-bottom:1px dotted #fff; padding:10px}
+.menu span{ padding-right:10px; vertical-align:middle;}
+
 .codrops-header {
 	margin: 0 auto;
 	padding: 2em;

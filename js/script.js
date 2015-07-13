@@ -29,9 +29,12 @@ $(function()
 	
 	$('#close').click(function(){});
 	$('.burgWrapper').bind('click', function()
+	
 	{
-		$('.burg').toggleClass('activeBurg');
-		$('#left-nav').toggle("slow");
+	
+		//$('.burg').toggleClass('activeBurg');
+		//$('#left-nav').toggle().animate({ left : '0%' }, 500);
+		$('#left-nav').toggle() 
 	});
 	
 });

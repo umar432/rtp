@@ -23,12 +23,12 @@
 		
 		<header style="z-index:20">
 		<div id="header" class="center">
-			<div style="width:20%; float:left; padding-top:10px; cursor:pointer " class="burgWrapper"><img src="img/Menu.png" width="30"></div>
+			<div style="width:20%; float:left; padding-top:10px; cursor:pointer; " class="burgWrapper"><img src="img/Menu.png" width="30"></div>
 		
 			<div style="width:60%;float:left; text-align:center"><span class="logo"><a href="#"><img src="img/logo_klm_cargo_400.png" height="40"/></a></span></div>
 			
-			<div style="width:20%;float:right; text-align:right; padding-top:10px ">
-			<img src="img/AirplaneTakeOff.png" width="30px">
+			<div style="width:20%;float:right; text-align:right; padding-top:15px;padding-bottom:5px; ">
+			<div style="xborder:1px solid rgba(0,0,0,0.6);  border-radius: 5%;background:#ccc; padding:5px; display:inline; background: linear-gradient(to bottom, rgba(242,130,91,1) 0%,rgba(229,91,43,1) 50%,rgba(240,113,70,1) 100%); /* W3C */"><img src="img/AirplaneTakeOff.png" width="25px"></div>
 			</div>
 			
 			<!-- ./ Logo Area -->
@@ -45,7 +45,7 @@
 				<!-- Top Navigation -->
 				<section class="">
 				<div class="panel">
-				<table class="table">
+				<table class="table" >
 				<thead>
 				  <tr>
 					<th>No.</th>
@@ -54,6 +54,7 @@
 					<th>Time</th>
 					<th>B</th>
 					<th>M</th>
+					<th style="display:none">Umar</th>
 				  </tr>
 				</thead>
 				<tbody>
@@ -64,6 +65,8 @@
 					<td>John</td>
 					<td>Doe</td>
 					<td>h</td>
+					<td style="display:block">Umar</td>
+					 
 				  </tr>
 				  <tr class="danger">
 					<td>John</td>
@@ -81,102 +84,7 @@
 					<td>Doe</td>
 					<td>h</td>
 				  </tr>
-				  <tr class="success">
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-				  </tr>
-				  <tr class="danger">
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-				  </tr>
-				  <tr class="info">
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-				  </tr>
-				  <tr class="success">
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-				  </tr>
-				  <tr class="danger">
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-				  </tr>
-				  <tr class="info">
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-				  </tr>
-				  <tr class="success">
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-				  </tr>
-				  <tr class="danger">
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-				  </tr>
-				  <tr class="info">
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-				  </tr>
-				  <tr class="success">
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-				  </tr>
-				  <tr class="danger">
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-				  </tr>
-				  <tr class="info">
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-				  </tr>
+				 
 				</tbody>
 				</table>
 				
@@ -205,18 +113,20 @@
 					<path d="M 40,100 150,0 l 0,0 z"/>
 				</svg>
 			</div><!-- /pageload-overlay -->
-			<div id="left-nav" style=" border-right:1px solid #ccc; position:absolute; height:100%;; background:#4fc3f7; width:50%; bottom:50px;display:none; z-index:10; ">
-			
+			<div id="left-nav" class="leftnavg">
+				<div class="photo"><img src="img/photo.jpg" />
+				<h4>Welcome, X079152</h4>
+				<div>Your Ride Screen</div>
+				</div>
+				<div class="menu"><span>Back to Flow Screen</span><img src="img/Home.png" width="15"/></div>
+				<div class="menu"><span>Notification</span><img src="img/notification.png" width="15"/></div>
+				<div class="menu"><span>Refresh Window</span><img src="img/Refresh.png" width="15"/></div>
+				<div class="menu"><span>Next Screen</span><img src="img/Next.png" width="15"/></div>
+				<div class="menu"><span>Log Out</span><img src="img/Unlock.png" width="15"/></div>
 			</div>	
 			
 		</div><!-- /pagewrap -->
-		<footer>
-				<div style="width:25%; float:left; text-align:center; margin-top:10px"><img src="img/Home.png" width="30"/></div>
-				<div style="width:25%; float:left; text-align:center; margin-top:10px"><img src="img/notification.png" width="30"/></div>
-				<div style="width:25%; float:left; text-align:center; margin-top:10px"><img src="img/Refresh.png" width="30"/></div>
-				<div style="width:25%; float:left; text-align:center; margin-top:10px"><img src="img/Next.png" width="30"/></div>
-				
-		</footer>
+		
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/classie.js"></script>
