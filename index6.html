@@ -16,72 +16,38 @@
 		<!--[if IE]>
   		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
+		
+		
 	</head>
 	<body>
-		<header style="border-bottom:1px solid #fff;box-shadow: 0 0 5px #888;" >
+		
+		<header style="z-index:20">
 		<div id="header" class="center">
-
-			<div class="hdr-lft">
-			<span class="logo"><a href="#home"><img src="img/logo_klm_cargo_400.png" height="60"/></a></span><!-- ./ Logo Area -->
+			<div style="width:20%; float:left; padding:10px; margin-top:10px"><a class="burgWrapper" href="##"><div class="burg"></div></a></div>
+		
+			<div style="width:40%;float:left; text-align:center;"><span class="logo"><a href="#"><img src="img/logo_klm_cargo_400.png" height="60"/></a></span></div>
+			
+			<div style="width:20%;float:right; text-align:right; padding:10px; margin-top:20px;">
+			<span style="border:1px solid #ccc; padding:10px; background: linear-gradient(to bottom, rgba(255,175,75,1) 0%,rgba(255,146,10,1) 100%);"><img src="img/AirplaneTakeOff.png" width="25px"></span>
 			</div>
-			<div class="hdr-rht">
-			<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>                        
-				</button><!-- ./ Hamburger Icon -->     
-			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="#about">About</a></li>
-				<li><a href="#contact">Contact</a></li>
-				<li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
-				</ul>
-			</div><!--./ Menu & Nav Bar -->
-			</div>
-			</nav>
-			</div>
+			
+			<!-- ./ Logo Area -->
+			
+			
 			<div class="clear"></div>
 		</div>
 		</header>
-		<div id="pagewrap" class="pagewrap">
+		
+		
+		<div id="pagewrap" class="pagewrap" style="">
+			
 			  <div class="center container_o show" id="page-1">
 				<!-- Top Navigation -->
 				<section class="">
-					<div class="panel">
-					 <table class="table">
-						<thead>
-						  <tr>
-							<th>Firstname</th>
-							<th>Lastname</th>
-							<th>Email</th>
-						  </tr>
-						</thead>
-						<tbody>
-						  <tr class="success">
-							<td>John</td>
-							<td>Doe</td>
-							<td>john@example.com</td>
-						  </tr>
-						  <tr class="danger">
-							<td>Mary</td>
-							<td>Moe</td>
-							<td>mary@example.com</td>
-						  </tr>
-						  <tr class="info">
-							<td>July</td>
-							<td>Dooley</td>
-							<td>july@example.com</td>
-						  </tr>
-						</tbody>
-					  </table>
-					  </div>
+					<button data-effect="st-effect-1">Slide in on top</button>
 					<div class="">
 						<p>To start the page loading animation, click the following link:</p>
-						<p><a class="pageload-link" href="#page-2">Show Page Loader</a></p>
+						<p><a class="pageload-link" href="#page-2">Show Page Loader</a> </p>
 					</div>
 				</section>
 				
@@ -102,12 +68,23 @@
 					<path d="M 40,100 150,0 l 0,0 z"/>
 				</svg>
 			</div><!-- /pageload-overlay -->
+			<div id="left-nav" style=" border-right:1px solid #ccc; position:absolute; height:100%;; background:#FFF; width:50%; bottom:60px;display:none; z-index:10; ">
+			
+		</div>	
 			
 		</div><!-- /pagewrap -->
-		 <script src="js/jquery.js"></script>
+		<footer>
+				<div style="width:25%; float:left; text-align:center; margin-top:10px"><img src="img/Home.png" width="30"/></div>
+				<div style="width:25%; float:left; text-align:center; margin-top:10px"><img src="img/notification.png" width="30"/></div>
+				<div style="width:25%; float:left; text-align:center; margin-top:10px"><img src="img/Refresh.png" width="30"/></div>
+				<div style="width:25%; float:left; text-align:center; margin-top:10px"><img src="img/Next.png" width="30"/></div>
+				
+		</footer>
+		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/classie.js"></script>
 		<script src="js/svgLoader.js"></script>
+		<script src="js/script.js"></script>
 		<script>
 			(function() {
 				var pageWrap = document.getElementById( 'pagewrap' ),
