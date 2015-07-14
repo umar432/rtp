@@ -19,7 +19,7 @@ html, body, .pagewrap {
 }
 
 body {
-	background:#fff; /*#4fc3f7;*/
+	background:url('../img/iphone_bg.png') no-repeat center center fixed; background-size:cover;  /*#4fc3f7;*/
 	color: #333;
 	font-size: 16px;
 	font-weight: 300;
@@ -27,7 +27,7 @@ body {
 	font-family: 'Lato', Arial, sans-serif;
 }
 
-.pagewrap{ padding-top:50px; padding-bottom:50px;}
+.pagewrap{ padding-top:60px; padding-bottom:50px;}
 .container_o {
 	min-height: 100%;
 	
@@ -52,7 +52,7 @@ a:hover, a:focus {
 /**/
 .center{ margin: 0 auto; position: relative; max-width: 1400px; padding-left: 24px; padding-right: 24px;}
 .clear{clear:both;}
-header{   width:100%;  clear:both; position:fixed; top:0; z-index:0; background:#4fc3f7; height:50px;  }
+header{   width:100%;  clear:both; position:fixed; top:0; z-index:0; border-bottom:1px solid #fff; height:60px;  box-shadow: 0 0 5px #888; background-color:rgba(0,0,0,0.5);}
 footer{   width:100%;  clear:both; position:fixed; bottom:0; z-index:1; background:#FAFAFA;  height:50px; border:1px solid #ccc; }
 footer p{ text-align:center; padding-top:10px;}
 .hdr-lft{ float:left; width:50%; padding-top:10px; padding-bottom:10px; }
@@ -68,7 +68,7 @@ footer p{ text-align:center; padding-top:10px;}
 .container-fluid{margin-right:0px;}
 .navbar-collapse{padding-right:0px;}
 
-.leftnavg{ border-right:1px solid #ccc; position:absolute; height:100%; background:#4fc3f7; width:50%; bottom:50px; display:none; z-index:10; padding-left:10px; padding-right:10px; padding-top:100px; color:#fff; cursor:pointer}
+.leftnavg{ border-right:1px solid #ccc; box-shadow: 0 0 5px #888;position:absolute; height:100%; background-color:rgba(0,0,0,0.5); width:50%; top:60px; display:none; z-index:10; padding-left:10px; padding-right:10px; padding-top:10px; color:#fff; cursor:pointer}
 .photo{text-align:center; padding-top:10px;}
 .photo img{ border-radius:50%;  	}
 .photo h4{border-bottom:1px solid #fff; padding-bottom:10px;}
