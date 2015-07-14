@@ -40,60 +40,111 @@
 		
 		
 		<div id="pagewrap" class="pagewrap" style="">
-			
+			  
 			  <div class=" container_o show" id="page-1">
 				<!-- Top Navigation -->
 				<section class="">
 				<div class="panel">
+				
 				<table class="table" >
 				<thead>
+				
 				  <tr>
-					<th>No.</th>
-					<th>C</th>
-					<th>Flight Name</th>
+					<th>#</th>
+					<th>FCount</th>
+					<th>FName</th>
 					<th>Time</th>
 					<th>B</th>
-					<th>M</th>
-					<th style="display:none">Umar</th>
+					<th>U</th>
+
 				  </tr>
+				  
 				</thead>
 				<tbody>
-				  <tr class="success">
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-					<td style="display:block">Umar</td>
-					 
-				  </tr>
-				  <tr class="danger">
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-				  </tr>
+				 <tr class="danger pageload-link">
+					<td>1</td>
+					<td><img src="img/airbig_1.png"/></td>
+					<td>KL 6031</td>
+					<td>12:55</td>
+					<td>10</td>
+					<td>00</td>
+				 </tr>
+				 <tr class="danger">
+					<td>2</td>
+					<td><img src="img/airbig.png"/></td>
+					<td>KL 5031</td>
+					<td>13:35</td>
+					<td>00</td>
+					<td>10</td>
+				 </tr>
+				  <tr class="warning">
+					<td>3</td>
+					<td><img src="img/airbig.png"/></td>
+					<td>KL 4031</td>
+					<td>14:35</td>
+					<td>02</td>
+					<td>10</td>
+				 </tr>
+				   <tr class="warning">
+					<td>4</td>
+					<td><img src="img/airbig.png"/></td>
+					<td>KL  731</td>
+					<td>16:15</td>
+					<td>05</td>
+					<td>10</td>
+				 </tr>
+				   <tr class="warning">
+					<td>5</td>
+					<td><img src="img/airbig.png"/></td>
+					<td>KL 1031</td>
+					<td>17:35</td>
+					<td>01</td>
+					<td>10</td>
+				 </tr>
+				 <tr class="info">
+					<td>6</td>
+					<td><img src="img/airbig.png"/></td>
+					<td>KL 131</td>
+					<td>18:05</td>
+					<td>08</td>
+					<td>06</td>
+				 </tr>
+				 <tr class="info">
+					<td>7</td>
+					<td><img src="img/airbig.png"/></td>
+					<td>KL 203</td>
+					<td>18:45</td>
+					<td>02</td>
+					<td>02</td>
+				 </tr>
 				  <tr class="info">
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-					<td>John</td>
-					<td>Doe</td>
-					<td>h</td>
-				  </tr>
-				 
+					<td>8</td>
+					<td><img src="img/airbig_1.png"/></td>
+					<td>KL 403</td>
+					<td>18:55</td>
+					<td>08</td>
+					<td>04</td>
+				 </tr>
+				   <tr class="info">
+					<td>9</td>
+					<td><img src="img/airbig_1.png"/></td>
+					<td>KL 703</td>
+					<td>18:55</td>
+					<td>00</td>
+					<td>12</td>
+				 </tr>
+				  <tr class="info">
+					<td>10</td>
+					<td><img src="img/airbig.png"/></td>
+					<td>KL 903</td>
+					<td>19:55</td>
+					<td>10</td>
+					<td>12</td>
+				 </tr>
 				</tbody>
 				</table>
 				
 				</div>
-					<button data-effect="st-effect-1">Slide in on top</button>
-					<div class="">
-						<p>To start the page loading animation, click the following link:</p>
-						<p><a class="pageload-link" href="#page-2">Show Page Loader</a> </p>
-					</div>
 				</section>
 				
 			  </div><!-- /container -->
@@ -101,10 +152,28 @@
 			<!-- The new page dummy; this would be dynamically loaded content -->
 			<div class="container_o" id="page-2">
 				<!-- Top Navigation -->
-			
 				<section>
-					<h2>This is an example for a new page.</h2>
-					<p><a class="pageload-link" href="#page-1">Go back</a></p>
+				<div class="panel">
+				<table data-url="data1.json" data-height="299" data-click-to-select="true">
+				<thead>
+				<tr>
+					<th data-field="state" data-checkbox="true"></th>
+					<th data-field="id" data-align="right">Item ID</th>
+					<th data-field="name" data-align="center">Item Name</th>
+					<th data-field="price" data-align="">Item Price</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+				<p><div class="pageload-link" href="#page-1">Go back</p>
 				</section>
 			</div><!-- /container -->
 
@@ -119,14 +188,14 @@
 				<div>Your Ride Screen</div>
 				</div>
 				<div class="menu"><span>Back to Flow Screen</span><img src="img/Home.png" width="15"/></div>
-				<div class="menu"><span>Notification</span><img src="img/notification.png" width="15"/></div>
-				<div class="menu"><span>Refresh Window</span><img src="img/Refresh.png" width="15"/></div>
-				<div class="menu"><span>Next Screen</span><img src="img/Next.png" width="15"/></div>
+				<div class="menu"><span class="badge">4</span><span>Notification</span><img src="img/notification.png" width="15"/></div>
 				<div class="menu"><span>Log Out</span><img src="img/Unlock.png" width="15"/></div>
 			</div>	
 			
 		</div><!-- /pagewrap -->
-		
+		<footer>
+		<p>&copy; KLM CARGO | RTP 2015</p>
+		</footer>
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/classie.js"></script>
@@ -137,7 +206,7 @@
 				var pageWrap = document.getElementById( 'pagewrap' ),
 					pages = [].slice.call( pageWrap.querySelectorAll( 'div.container_o' ) ),
 					currentPage = 0,
-					triggerLoading = [].slice.call( pageWrap.querySelectorAll( 'a.pageload-link' ) ),
+					triggerLoading = [].slice.call( pageWrap.querySelectorAll( '.pageload-link' ) ),
 					loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 400, easingIn : mina.easeinout } );
 
 				function init() {
