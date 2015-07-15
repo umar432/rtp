@@ -68,7 +68,7 @@ footer p{ text-align:center; padding-top:10px;}
 .container-fluid{margin-right:0px;}
 .navbar-collapse{padding-right:0px;}
 
-.leftnavg{ border-right:1px solid #ccc; box-shadow: 0 0 5px #888;position:absolute; height:100%; background-color:rgba(0,0,0,0.5); width:50%; top:60px; display:none; z-index:10; padding-left:10px; padding-right:10px; padding-top:10px; color:#fff; cursor:pointer}
+.leftnavg{ border-right:1px solid #ccc; box-shadow: 0 0 5px #888;position:absolute; height:100%; background-color:#000; opacity:0.8; width:50%; top:60px; display:none; z-index:10; padding-left:10px; padding-right:10px; padding-top:10px; color:#fff; cursor:pointer}
 .photo{text-align:center; padding-top:10px;}
 .photo img{ border-radius:50%;  	}
 .photo h4{border-bottom:1px solid #fff; padding-bottom:10px;}
@@ -243,7 +243,7 @@ section p {
 }
 
 #page-2 {
-	background: #FFF;
+	
 }
 
 @media screen and (max-width: 40em) {
